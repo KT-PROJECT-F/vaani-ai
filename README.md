@@ -2,8 +2,6 @@
 
 Speak a home-service request in Telugu, English, Hindi or a mix. Vaani understands it, finds a provider, books a slot and confirms in your language.
 
-This is a learning project for the Python batch (24 Nov 2026 to 19 Jan 2027). Every tool used is free.
-
 ## Team
 
 | Pair | Members | Owns |
