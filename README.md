@@ -48,8 +48,9 @@ The app still starts without any keys. The agent then uses a simple rule-based e
 ## Quick start
 
 ```bash
-git clone https://github.com/<org>/vaani-ai.git
+git clone https://github.com/KT-PROJECT-F/vaani-ai.git
 cd vaani-ai
+git checkout dev
 cp .env.example .env          # fill in your keys
 
 # 1. Start Postgres and Redis

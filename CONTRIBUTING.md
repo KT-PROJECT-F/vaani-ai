@@ -2,7 +2,7 @@
 
 ## Branches
 
-- `main` is protected. Nobody pushes to it directly.
+- Branch from `dev` and open PRs into `dev`. Only the mentor merges `dev` into `main`. Nobody pushes directly to `dev` or `main`.
 - Create a branch per task: `<type>/<pair>-<short-topic>`
   - `feat/p1-voice-endpoint`
   - `fix/p3-booking-double-slot`
@@ -28,11 +28,11 @@ chore: bump dependencies
 3. Fill in the PR template.
 4. CI must be green.
 5. One review from a different pair is required. Changes in `backend/app/agent/` or `backend/app/agent/prompts/` also need a mentor review.
-6. The author merges after approval (squash merge).
+6. The author squash-merges into `dev` after approval and green CI. The mentor merges `dev` into `main` before each Monday demo.
 
 ## Definition of done
 
-- Code merged to `main`
+- Code merged to `dev`
 - Tests added or updated
 - `ruff` and `mypy` pass (`eslint` for frontend)
 - Docs updated if behavior changed
