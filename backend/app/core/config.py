@@ -22,8 +22,8 @@ class Settings(BaseSettings):
 
     # LLMs
     groq_api_key: str = ""
-    groq_model_fast: str = "llama-3.1-8b-instant"
-    groq_model_smart: str = "llama-3.3-70b-versatile"
+    groq_model_fast: str = "openai/gpt-oss-20b"
+    groq_model_smart: str = "openai/gpt-oss-120b"
     google_api_key: str = ""
     gemini_model: str = "gemini-2.0-flash"
 

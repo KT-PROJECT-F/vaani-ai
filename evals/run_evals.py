@@ -36,9 +36,15 @@ def main() -> int:
     correct: dict[str, int] = defaultdict(int)
     by_language: dict[str, list[int]] = defaultdict(lambda: [0, 0])
     failures: list[str] = []
+    fallbacks = 0
 
     for case in cases:
-        result: ServiceRequest = extract(case["text"])
+        try:
+            result: ServiceRequest = extract(case["text"])
+        except Exception as exc:  # noqa: BLE001 - same fallback as extract_details_node
+            print(f"WARNING {case['id']}: LLM extraction failed ({exc}); using rule-based")
+            result = rule_based_extract(case["text"])
+            fallbacks += 1
         for field in FIELDS:
             ok = getattr(result, field) == case["expected"][field]
             correct[field] += ok
@@ -53,6 +59,8 @@ def main() -> int:
     total = len(cases) * len(FIELDS)
     overall = sum(correct.values()) / total
     print(f"Mode: {mode} | cases: {len(cases)}")
+    if fallbacks:
+        print(f"  WARNING: {fallbacks}/{len(cases)} cases fell back to rule-based extraction")
     for field in FIELDS:
         print(f"  {field:<10} {correct[field] / len(cases):.0%}")
     for lang, (ok, n) in sorted(by_language.items()):
