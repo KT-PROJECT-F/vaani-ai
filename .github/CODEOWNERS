@@ -1,0 +1,27 @@
+# Code owners for vaani-ai
+# Review requests go to the owning team. The mentor reviews everything else and the agent code.
+#
+# Pair 1 (vaani-voice):    Kanamarlapudipk (Pavan), lakshmiprasanna45 (Lakshmi Prasanna)
+# Pair 2 (vaani-agent):    Hemalatha1729 (Hemalatha), mathango (Mathan)
+# Pair 3 (vaani-backend):  rajeshkandlapalli-glitch (Rajesh), Naveen5901 (Naveen)
+# Pair 4 (vaani-frontend): Saidivya-20 (Sai Divya), sujithareddy-1324 (Sujitha)
+# Mentor:                  yaswanthtechie
+
+*                          @yaswanthtechie
+
+/backend/app/voice/        @KT-PROJECT-F/vaani-voice
+/backend/app/channels/     @KT-PROJECT-F/vaani-voice
+
+/backend/app/agent/        @KT-PROJECT-F/vaani-agent @yaswanthtechie
+/backend/app/llm/          @KT-PROJECT-F/vaani-agent
+/evals/                    @KT-PROJECT-F/vaani-agent
+
+/backend/app/api/          @KT-PROJECT-F/vaani-backend
+/backend/app/db/           @KT-PROJECT-F/vaani-backend
+/backend/app/tools/        @KT-PROJECT-F/vaani-backend
+/backend/app/workers/      @KT-PROJECT-F/vaani-backend
+/backend/alembic/          @KT-PROJECT-F/vaani-backend
+/.github/                  @KT-PROJECT-F/vaani-backend @yaswanthtechie
+/docker-compose.yml        @KT-PROJECT-F/vaani-backend
+
+/frontend/                 @KT-PROJECT-F/vaani-frontend

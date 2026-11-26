@@ -1,0 +1,12 @@
+{"id": "en-001", "language": "en", "text": "My kitchen sink is leaking badly and water is all over the floor. I need a plumber urgently this evening at Benz Circle, Vijayawada.", "expected": {"service": "plumber", "urgency": "today", "city": "Vijayawada"}}
+{"id": "te-001", "language": "te", "text": "మా ఇంట్లో కరెంట్ పోయింది, ఫ్యూజ్ ఎగిరిపోయింది. ఒక ఎలక్ట్రీషియన్‌ని గుంటూరుకి పంపండి, ఈరోజే కావాలి.", "expected": {"service": "electrician", "urgency": "today", "city": "Guntur"}}
+{"id": "mixed-001", "language": "mixed", "text": "Ghar mein paani nahi aa raha, please ek water tanker bhej do jaldi, Madhapur, Hyderabad.", "expected": {"service": "water_tanker", "urgency": "today", "city": "Hyderabad"}}
+{"id": "en-002", "language": "en", "text": "I smell gas near the stove in my flat in Gachibowli, Hyderabad. Please send someone now.", "expected": {"service": "unknown", "urgency": "emergency", "city": "Hyderabad"}}
+{"id": "en-003", "language": "en", "text": "Need a painter for two bedrooms in Tirupati sometime next week.", "expected": {"service": "painter", "urgency": "flexible", "city": "Tirupati"}}
+{"id": "en-004", "language": "en", "text": "My AC is not cooling at all, can someone come tomorrow morning? I live in MVP Colony, Vizag.", "expected": {"service": "ac_repair", "urgency": "flexible", "city": "Visakhapatnam"}}
+{"id": "en-005", "language": "en", "text": "There are cockroaches everywhere in the kitchen. Looking for pest control in Guntur.", "expected": {"service": "pest_control", "urgency": "flexible", "city": "Guntur"}}
+{"id": "en-006", "language": "en", "text": "Washing machine stopped spinning, need repair today in Patamata.", "expected": {"service": "appliance_repair", "urgency": "today", "city": null}}
+{"id": "en-007", "language": "en", "text": "Switch board is giving sparks in the bedroom, Vijayawada, please hurry!", "expected": {"service": "electrician", "urgency": "emergency", "city": "Vijayawada"}}
+{"id": "te-002", "language": "te", "text": "విజయవాడలో మా ఇంట్లో పైపు లీక్ అవుతోంది, ప్లంబర్ కావాలి.", "expected": {"service": "plumber", "urgency": "flexible", "city": "Vijayawada"}}
+{"id": "hi-001", "language": "hi", "text": "हैदराबाद में मेरे घर की बिजली चली गई है, अभी इलेक्ट्रीशियन चाहिए।", "expected": {"service": "electrician", "urgency": "today", "city": "Hyderabad"}}
+{"id": "mixed-002", "language": "mixed", "text": "Maa intlo RO purifier pani cheyyatledu, Tirupati lo evaraina pampandi.", "expected": {"service": "ro_service", "urgency": "flexible", "city": "Tirupati"}}
